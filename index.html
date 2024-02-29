@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/output.css" />
+    <link rel="stylesheet" href="./css/output.css" />
 
     <title>Frontend Mentor | Advice generator app</title>
 
@@ -32,16 +32,45 @@
       }
     </style>
   </head>
-  <body>
-    Advice #<!-- Advice ID goes here -->
+  <body onload="GetData()">
+    <main
+      class="bg-DarkBlue w-full h-screen flex justify-center items-center text-LightCyan font-manrope font-bold"
+    >
+      <div
+        class="bg-DarkGrayishBlue flex flex-col items-center max-w-[34rem] px-14 pt-14 rounded-2xl"
+      >
+        <p class="text-NeonGreen tracking-[0.2rem] uppercase text-sm mb-10" >
+          Advice #<span id="id-js"></span>
+        </p>
+        <blockquote>
+          <h1 class="text-3xl font-semibold text-center text-pretty mb-10" id="text-js">
 
-    "<!-- Advice text goes here -->"
+          </h1>
+        </blockquote>
+        <div class="flex">
+          <hr />
+          <img class="" src="./images/pattern-divider-desktop.svg" alt="" />
+          <hr />
+        </div>
+        <div class="">
+          <button class="relative top-7 bg-NeonGreen rounded-full p-5" id="btn-js">
+            <img src="./images/icon-dice.svg" alt="a dice to request a Advice" />
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- Advice ID goes here -->
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <!-- Advice text goes here -->
+    <footer class="bg-DarkBlue text-white">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Gerrit Schmittel</a>.
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
   </body>
 </html>
